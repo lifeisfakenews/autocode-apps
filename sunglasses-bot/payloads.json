@@ -1,0 +1,37 @@
+{
+  "functions/Other/add-member.js": {
+    "event": {
+      "user": {
+        "username": "deathistruenews",
+        "public_flags": 0,
+        "id": "887351240768491531",
+        "discriminator": "4182",
+        "avatar": "c2d230560ffd021e837039277795da3c"
+      },
+      "roles": [],
+      "premium_since": null,
+      "pending": false,
+      "nick": null,
+      "mute": false,
+      "joined_at": "2022-04-01T09:15:56.366252+00:00",
+      "is_pending": false,
+      "guild_id": "877814636039266336",
+      "flags": 1,
+      "deaf": false,
+      "communication_disabled_until": null,
+      "avatar": null
+    }
+  },
+  "functions/Other/del-member.js": {
+    "event": {
+      "user": {
+        "username": "deathistruenews",
+        "public_flags": 0,
+        "id": "887351240768491531",
+        "discriminator": "4182",
+        "avatar": "c2d230560ffd021e837039277795da3c"
+      },
+      "guild_id": "877814636039266336"
+    }
+  }
+}

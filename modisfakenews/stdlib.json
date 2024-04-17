@@ -1,0 +1,371 @@
+{
+  "name": "lifn/modisfakenews",
+  "timeout": 25000,
+  "connector": false,
+  "env": [
+    {
+      "name": "SUPPORT_SERVER",
+      "description": "The invite link for your supprot server E.G. https://discord.gg/q8R44ksqt4"
+    },
+    {
+      "name": "EMOJI_GUILD",
+      "description": "The ID of the server your emojis should be uploaded to"
+    }
+  ],
+  "events": {
+    "functions/Prefix/Moderation/soft-ban.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?soft-ban"
+      }
+    },
+    "functions/Prefix/Moderation/warn.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?warn"
+      }
+    },
+    "functions/Prefix/Moderation/ban.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?ban"
+      }
+    },
+    "functions/Prefix/Moderation/time-in.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?time-in"
+      }
+    },
+    "functions/Prefix/Moderation/clear-warns.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?clear-warns"
+      }
+    },
+    "functions/Prefix/Moderation/slowmode.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?slowmode"
+      }
+    },
+    "functions/Prefix/Moderation/unban.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?unban"
+      }
+    },
+    "functions/Prefix/Moderation/time-out.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?time-out"
+      }
+    },
+    "functions/Prefix/Other/actions.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?actions"
+      }
+    },
+    "functions/Prefix/Other/mod-actions.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?mod-actions"
+      }
+    },
+    "functions/Prefix/Other/warns.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?warns"
+      }
+    },
+    "functions/Prefix/Other/support.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?support"
+      }
+    },
+    "functions/Prefix/Other/case.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?case"
+      }
+    },
+    "functions/Prefix/Moderation/lock.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?lock"
+      }
+    },
+    "functions/Prefix/Other/server-info.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?server-info"
+      }
+    },
+    "functions/Prefix/Other/role-info.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?role-info"
+      }
+    },
+    "functions/Prefix/Other/user-info.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?user-info"
+      }
+    },
+    "functions/Prefix/Moderation/nuke.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?nuke"
+      }
+    },
+    "functions/Prefix/Moderation/purge.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?purge"
+      }
+    },
+    "functions/Prefix/Other/help.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?help"
+      }
+    },
+    "functions/Prefix/Moderation/edit.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?edit"
+      }
+    },
+    "functions/Slash/Moderation/ban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "ban"
+      }
+    },
+    "functions/Slash/Moderation/unban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "unban"
+      }
+    },
+    "functions/Slash/Moderation/kick.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "kick"
+      }
+    },
+    "functions/Slash/Moderation/soft-ban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "softban"
+      }
+    },
+    "functions/Slash/Moderation/slowmode.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "slowmode"
+      }
+    },
+    "functions/Slash/Moderation/nuke.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "nuke"
+      }
+    },
+    "functions/Slash/Moderation/purge.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "purge"
+      }
+    },
+    "functions/Slash/Other/help.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "help"
+      }
+    },
+    "functions/Buttons/help-mod.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "help-mod"
+      }
+    },
+    "functions/Buttons/help-other.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "help-other"
+      }
+    },
+    "functions/Buttons/help-setup.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "help-setup"
+      }
+    },
+    "functions/Slash/Other/support.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "support"
+      }
+    },
+    "functions/Slash/Other/user-info.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "user-info"
+      }
+    },
+    "functions/Slash/Other/role-info.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "role-info"
+      }
+    },
+    "functions/Slash/Other/server-info.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "server-info"
+      }
+    },
+    "functions/Slash/Moderation/warn.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "warn"
+      }
+    },
+    "functions/Slash/Moderation/time-in.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "time-in"
+      }
+    },
+    "functions/Slash/Moderation/edit.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "edit"
+      }
+    },
+    "functions/Slash/Other/case.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "case"
+      }
+    },
+    "functions/Slash/Other/warns.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "warns"
+      }
+    },
+    "functions/Slash/Other/actions.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "actions"
+      }
+    },
+    "functions/Slash/setup.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "setup"
+      }
+    },
+    "functions/Slash/Other/settings.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "settings"
+      }
+    },
+    "functions/Slash/Moderation/clear-warns.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "clear-warns"
+      }
+    },
+    "functions/Slash/Moderation/time-out.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "time-out"
+      }
+    },
+    "functions/Slash/Moderation/lock.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "lock"
+      }
+    },
+    "functions/Slash/Other/mod-actions.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "mod-actions"
+      }
+    },
+    "functions/Buttons/verify.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "verify"
+      }
+    },
+    "functions/Prefix/Other/captcha.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?captcha"
+      }
+    },
+    "functions/User/actions.js": {
+      "name": "discord.user.contextmenu.interaction",
+      "subtype": {
+        "name": "Actions"
+      }
+    },
+    "functions/User/user-info.js": {
+      "name": "discord.user.contextmenu.interaction",
+      "subtype": {
+        "name": "User Info"
+      }
+    },
+    "functions/User/warns.js": {
+      "name": "discord.user.contextmenu.interaction",
+      "subtype": {
+        "name": "Warns"
+      }
+    },
+    "functions/User/report.js": {
+      "name": "discord.user.contextmenu.interaction",
+      "subtype": {
+        "name": "Report"
+      }
+    },
+    "functions/Prefix/Moderation/kick.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?kick"
+      }
+    },
+    "functions/Prefix/Other/settings.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": ">settings"
+      }
+    },
+    "functions/Prefix/setup.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?setup"
+      }
+    },
+    "functions/message.js": {
+      "name": "discord.message.create"
+    },
+    "functions/Setup/emojis.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/Setup/context-menus.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/Setup/commands.js": {
+      "name": "autocode.self.deployed"
+    }
+  }
+}

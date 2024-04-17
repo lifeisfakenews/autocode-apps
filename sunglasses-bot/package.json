@@ -1,0 +1,19 @@
+{
+  "name": "new-project",
+  "author": "Sunglasses",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "jimp": "^0.16.1",
+    "canvas": "^2.9.1",
+    "@canvas-fonts/arial-bold": "^1.0.4",
+    "request-image-size": "^2.2.0",
+    "canvacord": "^5.2.3",
+    "autocode-discordjs": "^1.1.0",
+    "axios": "^0.26.1",
+    "yt-search": "^2.10.3",
+    "comma-number": "^2.1.0",
+    "ytsr": "^3.6.0",
+    "usetube": "^2.1.4"
+  }
+}

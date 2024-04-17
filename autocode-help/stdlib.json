@@ -1,0 +1,19 @@
+{
+  "name": "lifeisfakenews/autocode-bot-help",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/command/help.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "help"
+      }
+    },
+    "functions/events/discord/message/selectmenu/interaction.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "ac-help"
+      }
+    }
+  }
+}

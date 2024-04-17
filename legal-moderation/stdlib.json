@@ -1,0 +1,25 @@
+{
+  "name": "lifeisfakenews/legal-moderation",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/Commands/warn.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "warn"
+      }
+    },
+    "functions/Reject/warn.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "warn-reject"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "EMBED_COLOR",
+      "description": "The color you want the embeds to be"
+    }
+  ]
+}

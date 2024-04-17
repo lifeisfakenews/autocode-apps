@@ -1,0 +1,19 @@
+{
+  "name": "lifn/select-menu-roles",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/prefix.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!select-roles"
+      }
+    },
+    "functions/select-menu.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "roles"
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "name": "lifn/economyisfakenews",
+  "timeout": 30000,
+  "connector": false,
+  "events": {
+    "functions/Commands/help.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!help"
+      }
+    },
+    "functions/Commands/daily.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!daily"
+      }
+    },
+    "functions/Commands/bal.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!bal"
+      }
+    },
+    "functions/Commands/deposit.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!deposit"
+      }
+    },
+    "functions/Commands/withdraw.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!withdraw"
+      }
+    },
+    "functions/Commands/search.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!search"
+      }
+    },
+    "functions/Buttons/search-1.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "search-1"
+      }
+    },
+    "functions/Buttons/search-3.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "search-3"
+      }
+    },
+    "functions/Buttons/search-2.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "search-2"
+      }
+    },
+    "functions/Commands/beg.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!beg"
+      }
+    },
+    "functions/Commands/work.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!work"
+      }
+    },
+    "functions/Select/jobs.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "jobs"
+      }
+    },
+    "functions/Commands/shop.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!shop"
+      }
+    },
+    "functions/Commands/buy.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!buy"
+      }
+    },
+    "functions/Commands/give.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!give"
+      }
+    },
+    "functions/Commands/rob.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!rob"
+      }
+    },
+    "functions/Commands/inv.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!inv"
+      }
+    },
+    "functions/Commands/leaderboard.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!leaderboard"
+      }
+    },
+    "functions/Commands/addshop.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!addshop"
+      }
+    },
+    "functions/Commands/slots.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!slots"
+      }
+    },
+    "functions/Commands/roll.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!roll"
+      }
+    },
+    "functions/Commands/use.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!use"
+      }
+    },
+    "functions/lottery.js": {
+      "name": "scheduler.weekly",
+      "subtype": {
+        "weekday": "Sunday",
+        "time": "00:00 (12:00am)",
+        "timezone": "Etc — UTC, ETC (+00:00)"
+      }
+    },
+    "functions/Commands/job.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!job"
+      }
+    },
+    "functions/Commands/roulette.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!roulette"
+      }
+    },
+    "functions/Commands/addbal.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "j!addbal"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "COLOR",
+      "description": ""
+    }
+  ]
+}

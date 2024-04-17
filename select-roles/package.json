@@ -1,0 +1,8 @@
+{
+  "name": "new-project",
+  "author": "lifeisfakenews",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}

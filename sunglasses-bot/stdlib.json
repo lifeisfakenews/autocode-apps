@@ -1,0 +1,595 @@
+{
+  "name": "sunglasses/v2",
+  "timeout": 30000,
+  "connector": false,
+  "events": {
+    "functions/Slash/help.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "help"
+      }
+    },
+    "functions/Prefix/help.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?help"
+      }
+    },
+    "functions/Select/help.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "help"
+      }
+    },
+    "functions/Prefix/ball-8.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?8-ball"
+      }
+    },
+    "functions/Slash/ball-8.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "8-ball"
+      }
+    },
+    "functions/Prefix/dank.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?dank"
+      }
+    },
+    "functions/Slash/dank.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "dank"
+      }
+    },
+    "functions/Slash/smart.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "smart"
+      }
+    },
+    "functions/Slash/sus.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "sus"
+      }
+    },
+    "functions/Prefix/smart.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?smart"
+      }
+    },
+    "functions/Prefix/sus.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?sus"
+      }
+    },
+    "functions/Prefix/joke.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?joke"
+      }
+    },
+    "functions/Slash/joke.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "joke"
+      }
+    },
+    "functions/Prefix/dice.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?dice"
+      }
+    },
+    "functions/Slash/dice.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "dice"
+      }
+    },
+    "functions/Prefix/meme.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?meme"
+      }
+    },
+    "functions/Slash/meme.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "meme"
+      }
+    },
+    "functions/Button/meme.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "meme-next"
+      }
+    },
+    "functions/Prefix/perms.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?perms"
+      }
+    },
+    "functions/Slash/perms.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "perms"
+      }
+    },
+    "functions/Prefix/member-count.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?member-count"
+      }
+    },
+    "functions/Slash/member-count.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "member-count"
+      }
+    },
+    "functions/Slash/rank.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "rank"
+      }
+    },
+    "functions/Prefix/leaderboard.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?leaderboard"
+      }
+    },
+    "functions/Slash/leaderboard.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "leaderboard"
+      }
+    },
+    "functions/Tickets/bot-suggestions.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "ticket-bot-suggestion"
+      }
+    },
+    "functions/Tickets/bot-bug.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "ticket-bot-problem"
+      }
+    },
+    "functions/Tickets/suggestion.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "ticket-suggestion"
+      }
+    },
+    "functions/Tickets/problem.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "ticket-problem"
+      }
+    },
+    "functions/Tickets/other.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "ticket-other"
+      }
+    },
+    "functions/Tickets/close.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?close"
+      }
+    },
+    "functions/Tickets/archive.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "ticket-close"
+      }
+    },
+    "functions/Tickets/keep.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "ticket-keep"
+      }
+    },
+    "functions/Other/del-reaction.js": {
+      "name": "discord.message.reaction.remove"
+    },
+    "functions/Prefix/count.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?count"
+      }
+    },
+    "functions/Slash/count.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "count"
+      }
+    },
+    "functions/Prefix/role-info.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?role-info"
+      }
+    },
+    "functions/Prefix/server-info.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?server-info"
+      }
+    },
+    "functions/Prefix/user-info.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?user-info"
+      }
+    },
+    "functions/Other/add-rection.js": {
+      "name": "discord.message.reaction.add"
+    },
+    "functions/Other/add-invite.js": {
+      "name": "discord.invite.create"
+    },
+    "functions/Other/del-invite.js": {
+      "name": "discord.invite.delete"
+    },
+    "functions/Other/add-member.js": {
+      "name": "discord.guild.member.add"
+    },
+    "functions/Other/del-member.js": {
+      "name": "discord.guild.member.remove"
+    },
+    "functions/Button/weather-metric.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "weather-metric"
+      }
+    },
+    "functions/Button/weather-imperial.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "weather-imperial"
+      }
+    },
+    "functions/Prefix/weather.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?weather"
+      }
+    },
+    "functions/Slash/weather.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "weather"
+      }
+    },
+    "functions/Prefix/define.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?define"
+      }
+    },
+    "functions/Slash/define.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "define"
+      }
+    },
+    "functions/Slash/user-info.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "user-info"
+      }
+    },
+    "functions/Slash/role-info.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "role-info"
+      }
+    },
+    "functions/Slash/server-info.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "server-info"
+      }
+    },
+    "functions/Prefix/coinflip.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?coin-flip"
+      }
+    },
+    "functions/Slash/coin-flip.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "coin-flip"
+      }
+    },
+    "functions/other/youtube.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?youtube"
+      }
+    },
+    "functions/other/youtube-select.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "videos"
+      }
+    },
+    "functions/Button/leaderboard-invites.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "leaderboard-invites"
+      }
+    },
+    "functions/Button/leaderboard-count.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "leaderboard-counts"
+      }
+    },
+    "functions/Moderation/Slash/warn.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "warn"
+      }
+    },
+    "functions/Moderation/Slash/ban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "ban"
+      }
+    },
+    "functions/Moderation/Slash/unban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "unban"
+      }
+    },
+    "functions/Moderation/Slash/kick.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "kick"
+      }
+    },
+    "functions/Moderation/Slash/slowmode.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "slowmode"
+      }
+    },
+    "functions/Moderation/Slash/purge.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "purge"
+      }
+    },
+    "functions/Moderation/Slash/time-in.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "time-in"
+      }
+    },
+    "functions/Moderation/Slash/nuke.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "nuke"
+      }
+    },
+    "functions/Moderation/Slash/softban.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "softban"
+      }
+    },
+    "functions/Moderation/Slash/time-out.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "time-out"
+      }
+    },
+    "functions/Other/add-message.js": {
+      "name": "discord.channel.message.create",
+      "subtype": {
+        "channel_id": "900058771919892501"
+      }
+    },
+    "functions/Economy/addbal.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?addbal"
+      }
+    },
+    "functions/Economy/addshop.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?addshop"
+      }
+    },
+    "functions/Economy/bal.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?bal"
+      }
+    },
+    "functions/Economy/beg.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?beg"
+      }
+    },
+    "functions/Economy/buy.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?buy"
+      }
+    },
+    "functions/Economy/daily.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?daily"
+      }
+    },
+    "functions/Economy/deposit.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?deposit"
+      }
+    },
+    "functions/Economy/give.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?give"
+      }
+    },
+    "functions/Economy/inv.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?inv"
+      }
+    },
+    "functions/Economy/job.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?job"
+      }
+    },
+    "functions/Economy/rob.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?rob"
+      }
+    },
+    "functions/Economy/roll.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?roll"
+      }
+    },
+    "functions/Economy/roulette.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?roulette"
+      }
+    },
+    "functions/Economy/search.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?search"
+      }
+    },
+    "functions/Economy/shop.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?shop"
+      }
+    },
+    "functions/Economy/slots.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?slots"
+      }
+    },
+    "functions/Economy/use.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?use"
+      }
+    },
+    "functions/Economy/withdraw.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?withdraw"
+      }
+    },
+    "functions/Economy/work.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?work"
+      }
+    },
+    "functions/Select/jobs.js": {
+      "name": "discord.message.selectmenu.interaction",
+      "subtype": {
+        "custom_id": "jobs"
+      }
+    },
+    "functions/Button/search-1.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "search-1"
+      }
+    },
+    "functions/Button/search-2.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "search-2"
+      }
+    },
+    "functions/Button/search-3.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "search-3"
+      }
+    },
+    "functions/Button/leaderboard-money.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "leaderboard-money"
+      }
+    },
+    "functions/lottery.js": {
+      "name": "scheduler.weekly",
+      "subtype": {
+        "weekday": "Sunday",
+        "time": "00:00 (12:00am)",
+        "timezone": "Etc — UTC, ETC (+00:00)"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "COLOR",
+      "description": "The embed color"
+    },
+    {
+      "name": "GREEN",
+      "description": "Green Color"
+    },
+    {
+      "name": "LOGGING",
+      "description": "Log channel ID"
+    },
+    {
+      "name": "ME",
+      "description": "Bots ID"
+    },
+    {
+      "name": "MOD",
+      "description": "Moderator role ID"
+    },
+    {
+      "name": "RED",
+      "description": "Red Color"
+    },
+    {
+      "name": "TICKET_ROLE",
+      "description": "The staff role for tickets"
+    },
+    {
+      "name": "WEATHER_API_KEY",
+      "description": "API Key for Weather API"
+    }
+  ]
+}

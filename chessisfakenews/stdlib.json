@@ -1,0 +1,55 @@
+{
+  "name": "lifn/chessisfakenews",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/move.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?move"
+      }
+    },
+    "functions/Button/cancel.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "chess-nostart"
+      }
+    },
+    "functions/Button/start.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "chess-start"
+      }
+    },
+    "functions/board.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?board"
+      }
+    },
+    "functions/giveup.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?giveup"
+      }
+    },
+    "functions/turn.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?turn"
+      }
+    },
+    "functions/save.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?save"
+      }
+    },
+    "functions/chess.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "?chess"
+      }
+    }
+  }
+}

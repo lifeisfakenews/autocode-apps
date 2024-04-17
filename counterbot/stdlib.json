@@ -1,0 +1,94 @@
+{
+  "name": "deathistruenews/countingbot",
+  "timeout": 30000,
+  "connector": false,
+  "events": {
+    "functions/Buttons/easy.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "easy"
+      }
+    },
+    "functions/Buttons/hard.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "hard"
+      }
+    },
+    "functions/Buttons/pre.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "pre"
+      }
+    },
+    "functions/Slash/count.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "count"
+      }
+    },
+    "functions/Invites/delete.js": {
+      "name": "discord.invite.delete"
+    },
+    "functions/Invites/create.js": {
+      "name": "discord.invite.create"
+    },
+    "functions/welcome.js": {
+      "name": "discord.guild.member.add"
+    },
+    "functions/Buttons/invite.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "invites"
+      }
+    },
+    "functions/Reaction/add.js": {
+      "name": "discord.message.reaction.add"
+    },
+    "functions/Reaction/remove.js": {
+      "name": "discord.message.reaction.remove"
+    },
+    "functions/Slash/score.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "score"
+      }
+    },
+    "functions/easy.js": {
+      "name": "discord.channel.message.create",
+      "subtype": {
+        "channel_id": "905861315573186640"
+      }
+    },
+    "functions/pre.js": {
+      "name": "discord.channel.message.create",
+      "subtype": {
+        "channel_id": "906381975223414885"
+      }
+    },
+    "functions/hard.js": {
+      "name": "discord.channel.message.create",
+      "subtype": {
+        "channel_id": "905862272893739008"
+      }
+    },
+    "functions/debug.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "c!debug"
+      }
+    },
+    "functions/current.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "c!count"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "COLOR",
+      "description": ""
+    }
+  ]
+}

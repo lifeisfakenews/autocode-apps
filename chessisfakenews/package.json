@@ -1,0 +1,9 @@
+{
+  "name": "chess",
+  "author": "lifeisfakenews",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "chess.js": "^0.12.0"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "mod",
+  "author": "lifeisfakenews",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "autocode-discordjs": "^1.1.0",
+    "randomstring": "^1.2.2",
+    "jimp": "^0.16.1",
+    "validator": "^13.7.0"
+  }
+}

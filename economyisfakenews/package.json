@@ -1,0 +1,10 @@
+{
+  "name": "new-project",
+  "author": "lifeisfakenews",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest",
+    "ejs": "^3.1.8",
+    "comma-number": "^2.1.0"
+  }
+}

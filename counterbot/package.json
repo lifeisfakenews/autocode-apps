@@ -1,0 +1,8 @@
+{
+  "name": "countingbot",
+  "author": "deathistruenews <lifeisfakenews@outlook.com>",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "lifn/logisfakenews",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/commands.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/Create/ban.js": {
+      "name": "discord.guild.ban.add"
+    },
+    "functions/Create/channel.js": {
+      "name": "discord.channel.create"
+    },
+    "functions/Create/invite.js": {
+      "name": "discord.invite.create"
+    },
+    "functions/Delete/ban.js": {
+      "name": "discord.guild.ban.remove"
+    },
+    "functions/Delete/channel.js": {
+      "name": "discord.channel.delete"
+    },
+    "functions/Delete/invite.js": {
+      "name": "discord.invite.delete"
+    },
+    "functions/Update/channel.js": {
+      "name": "discord.channel.update"
+    },
+    "functions/set-logging.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "set-logging"
+      }
+    },
+    "functions/Update/emoji.js": {
+      "name": "discord.guild.emojis.update"
+    },
+    "functions/Create/role.js": {
+      "name": "discord.guild.role.create"
+    },
+    "functions/Update/role.js": {
+      "name": "discord.guild.role.update"
+    },
+    "functions/Delete/role.js": {
+      "name": "discord.guild.role.delete"
+    },
+    "functions/Create/thread.js": {
+      "name": "discord.thread.create"
+    },
+    "functions/Delete/thread.js": {
+      "name": "discord.thread.delete"
+    },
+    "functions/Update/thread.js": {
+      "name": "discord.thread.update"
+    },
+    "functions/Update/voice.js": {
+      "name": "discord.voice.state.update"
+    },
+    "functions/Update/pins.js": {
+      "name": "discord.channel.pins.update"
+    },
+    "functions/Update/member.js": {
+      "name": "discord.guild.member.update"
+    },
+    "functions/Delete/message.js": {
+      "name": "discord.message.delete"
+    },
+    "functions/Create/message.js": {
+      "name": "discord.message.create"
+    },
+    "functions/Update/message.js": {
+      "name": "discord.message.update"
+    }
+  }
+}

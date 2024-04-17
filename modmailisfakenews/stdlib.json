@@ -1,0 +1,38 @@
+{
+  "name": "lifn/modmailisfakenews",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/close-cmd.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "m?close"
+      }
+    },
+    "functions/close-btn.js": {
+      "name": "discord.message.button.interaction",
+      "subtype": {
+        "custom_id": "mm-close"
+      }
+    },
+    "functions/create-dm.js": {
+      "name": "discord.dm.create"
+    },
+    "functions/create-msg.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "m?reply"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "CHANNEL",
+      "description": "The ID of the channel you want threads to be created in"
+    },
+    {
+      "name": "ROLE",
+      "description": "The ID of the role to ping when a thread is created. False to disable"
+    }
+  ]
+}
