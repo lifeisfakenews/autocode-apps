@@ -21,7 +21,7 @@ Rewrites will likely happen in the order of the list above, although that could 
 
 ## Rewrites
 
-- Counter Bot is available currently at [lifeisfakenews/counterbot](https://github.com/lifeisfakenews/counterbot)
+- Counter Bot is available currently at [lifeisfakenews/polycount](https://github.com/lifeisfakenews/polycount)
 - modisfakenews has been renamed to PolyGuard and it is/will be available at  [lifeisfakenews/polyguard](https://github.com/lifeisfakenews/polyguard) as a part of my PolyBot series
 - logisfakenews has been renamed to PolyTrace and it is/will be available at  [lifeisfakenews/polytrace](https://github.com/lifeisfakenews/polytrace) as a part of my PolyBot series
 - chessisfakenews has been renamed to PolyChess and it is/will be available at  [lifeisfakenews/polychess](https://github.com/lifeisfakenews/polychess) as a part of my PolyBot series
